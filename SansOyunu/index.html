@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .rounded-t-5 {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .rounded-tr-lg-0 {
+        border-top-right-radius: 0;
+      }
+
+      .rounded-bl-lg-5 {
+        border-bottom-left-radius: 0.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/sass/style.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center mt-5 text-white">Şans Oyununa Hoş Geldiniz</h1>
+  </header>
+  <div class="containers d-flex">
+    <div class="giris">
+      <!-- Section: Design Block -->
+      <section class=" text-center text-lg-start">
+
+        <div class="card mb-3">
+          <div class="row g-0 d-flex align-items-center">
+            <div class="col-lg-4 d-none d-lg-flex">
+              <img
+                src="https://img.freepik.com/free-vector/soccer-green-field_225004-1137.jpg?size=626&ext=jpg&ga=GA1.1.1047163839.1684665810&semt=sph"
+                alt="Trendy Pants and Shoes" class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body py-5 px-md-5">
+
+                <form>
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example1" class="form-control giris1" />
+                    <label class="form-label" for="form2Example1">Kullanici Adi</label>
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example2" class="form-control girisS1" />
+                    <label class="form-label " for="form2Example2">Sifre</label>
+                  </div>
+
+                  <!-- 2 column grid layout for inline styling -->
+                  <div class="row mb-4">
+
+                    <div class="col">
+                      <!-- Simple link -->
+                      <button type="button" class="btn btn-primary kayitol">Kayit Ol</button>
+                    </div>
+                    <div class="col">
+                      <!-- Simple link -->
+                      <button type="button" class="btn btn-danger sifreUnut">Sifre mi Unuttum</button>
+                    </div>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="button" class="btn btn-success btn-block mb-4 girisYap">Giris Yap</button>
+
+                  <p class="text-bg-warning  p-3 mt-3 sifreGirisD"></p>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Design Block -->
+
+
+    </div>
+    <div class="kayitOl">
+      <h3 class="text-white mt-5 ">Kayit Yerine Hoş Geldiniz</h3>
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control kulllanici" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Kullanici Adiniz</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control tcni" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Tcnizi Giriniz</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control gizli" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Gizli Cevap Giriniz</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control sifre" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Sifre girin</label>
+      </div>
+      <div class="form-floating ">
+        <input type="password" class="form-control sifret" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Sifreyi Dogrulayin</label>
+      </div>
+      <button type="button" class="btn btn-success kayitOlun w-100 mt-2">Kayit Olun</button>
+      <div class="text-bg-warning  p-3 mt-3 sifreYanlis"></div>
+
+    </div>
+    <div class="sifremUnuttum">
+      <h3 class="text-white mt-5">Sifre Yenilemeye Hos Geldiniz</h3>
+
+      <div class="sifreBilgi">
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control sifreUtc" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Tcnizi Giriniz</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control sifreUnG" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Gizli Cevap Giriniz</label>
+          <button type="button" class="btn btn-success sifreOnayB w-100 mt-2">Onayla</button>
+
+        </div>
+      </div>
+
+      <div class="sifreYenileme">
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control sifreYe" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Yeni Sifrenizi Giriniz</label>
+        </div>
+        <div class="form-floating ">
+          <input type="password" class="form-control sifreYeT" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Yeni Sifrenizi Dogrulayin</label>
+          <button type="button" class="btn btn-success sifreOnayC w-100 mt-2">Onayla</button>
+
+        </div>
+      </div>
+
+
+      <div class="text-bg-warning  p-3 mt-3 sifreOnay"></div>
+    </div>
+    <div class="anaSayfa">
+      <div class="container">
+        <div class="alert alert-primary bakiyeS" role="alert">
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Maç Tahmin Oyunu</h5>
+                <p class="card-text text-center">2 Takım arasında geçecek mücadelede tahminler yap</p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success simdiOyna">Şimdi Oyna</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center">Bakiye Yukle</h5>
+                <p class="card-text text-center">Guvenlik bilgilerini girerek bakiye yukleyin</p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success simdiYukle">Şimdi yukle</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="bakiye">
+      <h3 class="text-white mt-5">Bakiye Yuklemeye Hos Geldiniz</h3>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control tcbakiye" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Tc'niz</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control tcSifre" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Sifreniz</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control yeniBky" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Ne Kadar Yuklemek Istiyorsunuz</label>
+      </div>
+      <button type="button" class="btn btn-success yukle w-100 mt-2">Bakiye Yukleyin</button>
+      <div class="text-bg-success  p-3 mt-3 yuklep"></div>
+
+    </div>
+<div class="bakiyeVeT">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <div class="form-outline mb-4">
+              <input type="number" id="form2Example1" class="form-control text-white oynBky" />
+              <label class="form-label text-success" for="form2Example1">Oynamak istediginiz tutari girin</label>
+            </div>
+            <button type="button" class="btn btn-success optionB w-100 mt-2">Baslayin</button>
+            <p class="text-bg-warning  p-3 mt-3 oyunYeri"></p>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+<div class="container takimlar ">
+      <div class="row">
+        <div class="col-5">
+<!-- Card -->
+<div class="card d-inline-block float-end">
+  <img src="" style="object-fit:contain ;width:200px;" class="card-img-top takim1Res" alt="...">
+  <div class="card-body" style="width: 200px;">
+    <h4 class="card-title takim1"></h4>
+    <button  class="btn btn-primary takim1Y"></button>
+  </div>
+</div>
+<!-- Card -->
+        </div>
+        <div class="col-2">
+          <h1 class="text-center text-white">VS</h1>
+        </div>
+        <div class="col-5">
+         <!-- Card -->
+<div class="card d-inline-block">
+  <img src="" style="object-fit:contain ;width:200px;" class="card-img-top takim2Res" alt="...">
+  <div class="card-body" style="width: 200px;">
+    <h4 class="card-title takim2"></h4>
+    <button  class="btn btn-primary takim2Y"></button>
+  </div>
+</div>
+<!-- Card -->
+        </div>
+
+        <p class="text-bg-primary text-center p-3 mt-3 oyunSonuc "></p>
+        <button class="btn-success birDahaO bg-success  mt-2 mb-2">Bir Daha Oyna</button>
+        <button class="btn-success bg-success bakiyeBir">Bakiye Yukle</button>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

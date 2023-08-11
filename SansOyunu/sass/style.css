@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #275a44 !important;
+  height: 70vh;
+}
+
+.containers {
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.kayitOl, .sifremUnuttum, .sifreYenileme, .anaSayfa, .sifreGirisD, .bakiye, .yuklep, .oyunYeri, .oyunSonuc {
+  display: none;
+}
+
+.sifreYanlis, .sifreOnay {
+  display: none;
+  border-radius: 50px;
+}
+
+.bakiyeVeT, .takimlar {
+  display: none;
+}
+
+.birDahaO, .bakiyeBir {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
