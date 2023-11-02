@@ -3,4 +3,4 @@ Bu uygulamamda javascrıptle
 -kullanıcı giriş
 -kullanıcı şifre unuttum kısmı
 -oyun içi bakiye yüklemeli
--kazanıp kaybedince bakiyenin güncellenmesi 
+-kazanıp kaybedince bakiyenin güncellenmesi.
